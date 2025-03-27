@@ -8,12 +8,7 @@
             <div class="col-md-6">
                 <p>Terms and Conditions</p>
                 </div>
-    
-
-
-
         </div> <!-- column-->
     </div> <!-- row -->
 </footer>
 <?php wp_footer(); ?>
-</html>
