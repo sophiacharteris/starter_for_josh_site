@@ -24,11 +24,6 @@ register_nav_menus( array(
 ) );
 ?>
 <?php
-register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'top-menu' ),
-) );
-?>
-<?php
 add_theme_support('post-thumbnails'); 
 ?>
 <?php
@@ -36,4 +31,32 @@ function add_excerpts_to_pages() {
     add_post_type_support('page', 'excerpt');
 }
 add_action('init', 'add_excerpts_to_pages');
+?>
+<?php
+function footer_left() {
+
+  register_sidebar( array(
+    'name'          => 'footer-left',
+    'id'            => 'footer-l',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+  
+  ) );
+
+}
+add_action( 'widgets_init', 'footer_left' );
+?>
+<?php
+function footer_right() {
+
+  register_sidebar( array(
+    'name'          => 'footer-right',
+    'id'            => 'footer-r',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+  
+  ) );
+
+}
+add_action( 'widgets_init', 'footer_right' );
 ?>

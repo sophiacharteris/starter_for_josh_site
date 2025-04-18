@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
-
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 
 <link rel="preconnect" href="https://font.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,8 +54,6 @@
     }
 ?>">
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
-
-
 </head>
 <body>
 <header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
@@ -68,10 +66,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
         <span class="navbar-toggler-icon"></span>
     </button>
-      
-        <?php 
-
-wp_nav_menu( array(
+        <?php wp_nav_menu( array(
   'theme_location'  => 'primary',
   'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
   'container'       => 'div',
@@ -81,18 +76,13 @@ wp_nav_menu( array(
   'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
   'walker'          => new WP_Bootstrap_Navwalker(),
 ) );
-
 ?>
 </nav>
-
-
       <div class="tag">
       <!-- div that holds the content in the middle of the page-->
         <h1><?php the_field('maintagline'); ?></h1>
               </div><!-- container-->
-
       </div>
-
       <?php wp_head(); ?> 
     </header>
 </body>
