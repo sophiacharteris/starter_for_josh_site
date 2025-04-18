@@ -3,7 +3,6 @@
     Template Name: Home page
     */
     ?>
-
 <?php get_header();?>   <!--  Tells WordPress to include header.php -->
 <section class="container-fluid aboutbg text-center">
     <div class="container">
@@ -21,27 +20,33 @@
         <div class="row">
 
 <div class="col-md-4">
-<img class="img-fluid" <?php echo esc_url($image['http://170.187.231.66/~mesh5/wp-content/themes/starter_for_josh_site/images/port1.jpg']); ?>"  alt="woman">
-<h4 class="article-title"><?php the_field('articletitle'); ?></h4>
-<p class="date" ><?php the_field('articledate'); ?></p>
-<p class="article-p"><?php the_field('articleexcerpt'); ?> </p>
-<a href="<?php the_field('readmore'); ?>" class="readmore">CONTINUE READING</a>
+<?php
+$image = get_field('articleimage_port1');?>
+<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+<h4 class="article-title"><?php the_field('articletitle_left'); ?></h4>
+<p class="date" ><?php the_field('articledate_left'); ?></p>
+<p class="article-p"><?php the_field('articleexcerpt_left'); ?> </p>
+<a href="<?php the_field('readmore_left'); ?>" class="readmore">CONTINUE READING</a>
 </div>
 
 <div class="col-md-4">
-    <img class="img-fluid" src="http://170.187.231.66/~mesh5/wp-content/themes/starter_for_josh_site/images/port2.jpg" alt="robot">
-    <h4 class="article-title">A PORTRAIT</h4>
-    <p class="date">Friday,November 10. 2030</p>
-    <p class="article-p">STS has never been shy of seeking new terrains of  investigation. More and  more  STS s cholars are  starting to explore and intervene in the arts.  This object of study  brings  new challenges and  opportunities that we want  to explore in this session.   We would  like to gather first of all simply  new kinds of  knowledge arising from  STS study  of the arts.</p>
-    <a class= "readmeore" href="#"> CONTINUE READING></a>
+<?php
+$image = get_field('articleimage_port2');?>
+<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+<h4 class="article-title"><?php the_field('articletitle_middle'); ?></h4>
+<p class="date" ><?php the_field('articledate_middle'); ?></p>
+<p class="article-p"><?php the_field('articleexcerpt_middle'); ?> </p>
+<a href="<?php the_field('readmore_middle'); ?>" class="readmore">CONTINUE READING</a>
     </div>
 
     <div class="col-md-4">
-        <img class="img-fluid" src="http://170.187.231.66/~mesh5/wp-content/themes/starter_for_josh_site/images/port3.jpg" alt="leaf">
-        <h4 class="article-title">A PORTRAIT</h4>
-        <p class="date">Friday,November 10. 2030</p>
-        <p class="article-p">STS has never been shy of seeking new terrains of  investigation. More and  more  STS s cholars are  starting to explore and intervene in the arts.  This object of study  brings  new challenges and  opportunities that we want  to explore in this session.   We would  like to gather first of all simply  new kinds of  knowledge arising from  STS study  of the arts.</p>
-        <a class= "readmeore" href="#"> CONTINUE READING></a>
+    <?php
+        $image = get_field('articleimage_port3');?>
+        <img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+        <h4 class="article-title"><?php the_field('articletitle_right'); ?></h4>
+        <p class="date" ><?php the_field('articledate_right'); ?></p>
+        <p class="article-p"><?php the_field('articleexcerpt_right'); ?> </p>
+        <a href="<?php the_field('readmore_right'); ?>" class="readmore">CONTINUE READING</a>
         </div>
 
         </div> <!-- row -->
