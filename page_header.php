@@ -61,7 +61,7 @@
 
 
 </head>
-<header class="container-fluid" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">">
+<header class="container-fluid bg1" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">">
  
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
