@@ -54,7 +54,8 @@
     } else {
         echo esc_attr(get_bloginfo('description'));
     }
-?>">
+?>
+>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 
 

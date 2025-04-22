@@ -137,7 +137,7 @@ height: 40vh; /*Viewport Height (vh) — This unit is based on the height of the
 
 }
 
-.smallpage-bg {
+.smallpage_bg {
     width: 100%;
 background: url("images/page_header_bg.jpg") no-repeat center center;
 background-size: cover;/*make the background image cover the whole div proportionally*/

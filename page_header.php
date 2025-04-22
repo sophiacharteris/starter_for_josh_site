@@ -11,9 +11,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
 
-
-
-
 <title> <?php
   if (function_exists('is_tag') && is_tag()) {
      single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
@@ -32,10 +29,9 @@
   if ($paged>1) {
      echo ' - page '. $paged; }
 ?>
-
-  
 </title>
-<meta name="description" content="<?php
+
+<meta name="description" content=<?php
     if (is_single() || is_page()) {
         $excerpt = get_the_excerpt();
         
@@ -56,12 +52,13 @@
     } else {
         echo esc_attr(get_bloginfo('description'));
     }
-?>">
+?>
+>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 
 
 </head>
-<header class="container-fluid bg1" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">">
+<header class="container-fluid smallpage_bg" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">">
  
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
