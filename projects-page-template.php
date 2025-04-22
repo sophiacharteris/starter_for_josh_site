@@ -30,7 +30,7 @@ $the_query = new WP_Query( $args ); ?>
                 } ?>
 <p class="about-text"><?php the_excerpt(); ?></p>
     <a class="readmore" href="<?php the_permalink(); ?>"> CONTINUE READING</a>
-</div>
+</div> <!-- loop div -->
 </div>    <?php endwhile; ?>
     <!-- end of the loop -->
  
