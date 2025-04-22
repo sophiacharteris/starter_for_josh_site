@@ -31,7 +31,7 @@
 ?>
 </title>
 
-<meta name="description" content="<?php
+<meta name="description" content="<?php bloginfo('description');
     if (is_single() || is_page()) {
         $excerpt = get_the_excerpt();
         
@@ -57,7 +57,7 @@
 
 
 </head>
-<header class="container-fluid smallpage_bg" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">">
+<header class="container-fluid smallpage_bg" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">
  
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
