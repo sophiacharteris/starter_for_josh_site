@@ -4,7 +4,7 @@
   <meta charset="<?php bloginfo('charset'); ?>"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
+<meta name="Description" content="<?php echo esc_attr($meta_description); ?>"/>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 
 <link rel="preconnect" href="https://font.googleapis.com">
@@ -53,10 +53,8 @@
         echo esc_attr(get_bloginfo('description'));
     }
 ?>">
-<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
-
-
 </head>
+<body>
 <header class="container-fluid smallpage_bg" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">
  
     <nav class="navbar navbar-expand-md navbar-dark">
@@ -91,6 +89,6 @@
 <h1 class="smallpage-title"><?php the_field('projectsheadertitle'); ?> </h1>
 </div>              
 </div><!-- container-->
+<?php wp_head(); ?> 
 </header>
-
-      <?php wp_head(); ?> 
+  </body>

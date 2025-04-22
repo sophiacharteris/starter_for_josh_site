@@ -29,9 +29,9 @@
      echo ' - page '. $paged; }
 ?>
 </title>
-<meta name="description" content="<?php bloginfo('description'); ?>">
+<meta name="description" content="<?php
 
-   <?php if (is_single() || is_page()) {
+    if (is_single() || is_page()) {
         $excerpt = get_the_excerpt();
         
         // Fallback to content if excerpt is empty
@@ -51,9 +51,10 @@
     } else {
         echo esc_attr(get_bloginfo('description'));
     }
-?>
-<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
+?>">
 </head>
+
+<body>
 <header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
  
     <nav class="navbar navbar-expand-md navbar-dark">
@@ -83,3 +84,4 @@
       </div>
       <?php wp_head(); ?> 
     </header>
+    </body>
