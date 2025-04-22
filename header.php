@@ -50,7 +50,7 @@
     } else {
         echo esc_attr(get_bloginfo('description'));
     }
-?>">
+?>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 </head>
 <header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
