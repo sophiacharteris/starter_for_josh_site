@@ -92,7 +92,6 @@
 <h1 class="smallpage-title"><?php the_field('projectsheadertitle'); ?> </h1>
 </div>              
 </div><!-- container-->
-
+</header>
 
       <?php wp_head(); ?> 
-    </header>

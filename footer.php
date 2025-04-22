@@ -16,6 +16,6 @@ endif; ?>
         </div> <!-- column-->
     </div> <!-- row -->
 </footer>
-<?php wp_footer(); ?>
 </body>
 </html>
+<?php wp_footer(); ?>
