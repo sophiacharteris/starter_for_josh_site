@@ -33,7 +33,7 @@
 
   
 </title>
-<meta name="description" content="<?php
+<meta name="description" content<?php
     if (is_single() || is_page()) {
         $excerpt = get_the_excerpt();
         
@@ -59,7 +59,7 @@
 
 
 </head>
-<header class="container-fluid small_herobg">
+<header class="container-fluid smallpage_bg">
  
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
