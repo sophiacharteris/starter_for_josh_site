@@ -22,7 +22,7 @@
 <div class="col-md-4">
 <?php
 $image = get_field('articleimage_port1');?>
-<img class="img-fluid" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+<img class="img-fluid" <?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>
 <h4 class="article-title"><?php the_field('articletitle_left'); ?></h4>
 <p class="date" ><?php the_field('articledate_left'); ?></p>
 <p class="article-p"><?php the_field('articleexcerpt_left'); ?></p>
