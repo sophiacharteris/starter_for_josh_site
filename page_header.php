@@ -31,7 +31,7 @@
 ?>
 </title>
 
-<meta name="description" content=<?php
+<meta name="description" content="<?php
     if (is_single() || is_page()) {
         $excerpt = get_the_excerpt();
         
@@ -52,8 +52,7 @@
     } else {
         echo esc_attr(get_bloginfo('description'));
     }
-?>
->
+?>">
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 
 
