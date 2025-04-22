@@ -10,7 +10,6 @@
 <link rel="preconnect" href="https://font.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
-
 <title> <?php
   if (function_exists('is_tag') && is_tag()) {
      single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
@@ -29,7 +28,6 @@
   if ($paged>1) {
      echo ' - page '. $paged; }
 ?>
-
 </title>
 <meta name="description" content="<?php
     if (is_single() || is_page()) {
@@ -55,7 +53,6 @@
 ?>">
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 </head>
-<body>
 <header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
  
     <nav class="navbar navbar-expand-md navbar-dark">
@@ -85,4 +82,3 @@
       </div>
       <?php wp_head(); ?> 
     </header>
-</body>
