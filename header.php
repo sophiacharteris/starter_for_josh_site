@@ -29,8 +29,9 @@
      echo ' - page '. $paged; }
 ?>
 </title>
-<meta name="description" content="<?php
-    if (is_single() || is_page()) {
+<meta name="description" content="<?php bloginfo('description'); ?>">
+
+   <?php if (is_single() || is_page()) {
         $excerpt = get_the_excerpt();
         
         // Fallback to content if excerpt is empty
