@@ -13,6 +13,7 @@ endif; ?>
 endif; ?>
         </div> <!-- column-->
     </div> <!-- row -->
+</div> <!-- container -->
 </footer>
 <?php wp_footer(); ?>
 </body>

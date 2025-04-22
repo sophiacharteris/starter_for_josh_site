@@ -51,5 +51,5 @@ $image = get_field('articleimage_port2');?>
 
         </div> <!-- row -->
     </div> <!-- container -->
+    <?php get_footer();?>   <!-- Tells WordPress to include footer.php   -->
     </section>
-<?php get_footer();?>   <!-- Tells WordPress to include footer.php   -->
